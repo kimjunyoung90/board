@@ -4,10 +4,10 @@ import java.util.Date;
 
 public class Member {
 
-    private String id;
-    private String name;
-    private String password;
-    private Date regDate;
+    private final String id;
+    private final String name;
+    private final String password;
+    private final Date regDate;
 
     public Member(String id, String name, String password, Date regDate) {
         this.id = id;

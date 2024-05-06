@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.Date;
 
 public class JoinService {
-    private MemberDao memberDao = new MemberDao();
+    private final MemberDao memberDao = new MemberDao();
 
     public void join(JoinRequest joinReq) {
         Connection conn = null;
