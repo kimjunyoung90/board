@@ -47,6 +47,7 @@ public class LoginHandler implements CommandHandler {
 
         try {
             User user = loginService.login(id, password);
+            //세션에 사용자 정보를 저장한다.
             req.getSession().setAttribute("authUser", user);
             res.sendRedirect(req.getContextPath() + "/index.jsp");
             return null;
